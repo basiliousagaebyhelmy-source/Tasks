@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MoodMixer — تجربة تفاعلية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app" id="app">
+
+  <!-- ===== رأس الصفحة ===== -->
+  <header class="top">
+    <h1>MoodMixer — تجربة تفاعلية</h1>
+    <p>اختر مزاجك واحصل على نشاط سريع لتحسين يومك ✨</p>
+  </header>
+
+  <!-- ===== القائمة الجانبية ===== -->
+  <aside class="left">
+    <h3>اختر مزاجك</h3>
+    <div class="moods" id="moods">
+      <div class="mood" data-id="calm">
+        <div class="label">هادئ</div>
+        <div class="desc">راحة وتنفس</div>
+      </div>
+      <div class="mood" data-id="focus">
+        <div class="label">تركيز</div>
+        <div class="desc">عمل وإنجاز</div>
+      </div>
+      <div class="mood" data-id="playful">
+        <div class="label">مرح</div>
+        <div class="desc">إبداع وضحك</div>
+      </div>
+      <div class="mood" data-id="energy">
+        <div class="label">نشاط</div>
+        <div class="desc">حركة وحماس</div>
+      </div>
+    </div>
+
+    <button class="btn" id="startBtn">ابدأ التجربة</button>
+    <button class="btn" id="randomBtn">مزاج عشوائي</button>
+    <button class="btn" id="regenBtn">اقتراح جديد</button>
+  </aside>
+
+  <!-- ===== منطقة النتائج ===== -->
+  <main class="right">
+    <h2 id="moodTitle">اختر مزاجك</h2>
+    <p id="moodSub">سيظهر هنا النشاط عند البدء.</p>
+
+    <div class="card" id="activityCard" style="display:none;">
+      <div id="activityTitle"></div>
+    </div>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
